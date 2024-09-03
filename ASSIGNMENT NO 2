@@ -2,28 +2,26 @@ def createlist(X, ab_students, n):
     for i in range(n):
         marks = input("Enter marks scored: ")
         if marks == "ab":
-            ab_students.append(i)  # Track absent student indices
+            ab_students.append(i)  
         else:
-            X.append(int(marks))  # Convert input to integer if it's a mark
+            X.append(int(marks)) 
 
 X = []
-ab_students = []  # List to track indices of absent students
+ab_students = [] 
 n = int(input("Enter the number of students: "))
 createlist(X, ab_students, n)
 print("Marks:", X)
 
 
 def avg():
-    #if X:  # Ensure X is not empty
         total = sum(X)
-        average = total / len(X)  # Use len(X) to get count of present students
+        average = total / len(X) 
         print("Average marks:", average)
 avg()
 
 
 
 def maximum():
-    #if X:  # Ensure X is not empty
         max = X[0]
         for i in X:
             if i > max:
@@ -34,7 +32,6 @@ maximum()
 
 
 def minimum():
-    #if X:  # Ensure X is not empty
         min = X[0]
         for i in X:
             if i < min:
@@ -44,7 +41,7 @@ minimum()
 
 
 def absent(X, ab_students):
-    count = len(ab_students)  # The length of the absent_students list
+    count = len(ab_students)  
     print("Absent students are:", count)
 
 absent(X, ab_students)
