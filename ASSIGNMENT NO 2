@@ -14,8 +14,10 @@ print("Marks:", X)
 
 
 def avg():
-        total = sum(X)
-        average = total / len(X) 
+        sum=0
+        for i in X:
+          sum=sum+1
+          average = total / len(X) 
         print("Average marks:", average)
 avg()
 
