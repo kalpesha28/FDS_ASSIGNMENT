@@ -1,11 +1,12 @@
-A=["elena","damon","klaus","matt"]
-B=["klaus","stefan","bonnie","jenny"]
-C=["klaus","jenny","markus","matt"]
+A=["elena","damon","klaus","matt"]  //students playing cricket
+B=["klaus","stefan","bonnie","jenny"]  //students playing badminton
+C=["klaus","jenny","markus","matt"]   //students playing football
 D=[]
 E=[]
 F=[]
 G=[]
 H=[]
+
 def union():
  for i in A:
     for j in B:
@@ -14,6 +15,7 @@ def union():
                 D.append(i)
  print("students who play cricket,badminton and football are:",D)        
 union()
+
 
 def condition1():
     for i in A:
@@ -40,9 +42,10 @@ def condition3():
     for k in C:
         if k not in A and k not in B:
             G.append(k)
-    print("students who play neither cricket nor badminton",G) 
+    print("students who play neither cricket nor badminton:",G) 
     print("number of students who play neither cricket nor badminton=",len(G))
 condition3()       
+
 
 
 def condition4():
@@ -50,5 +53,5 @@ def condition4():
         if i in C and i not in B:
             H.append(i)
     print("students who play cricket and football but not badminton:",H)
-    print("number of srudents who play cricket and football but not badminton=",len(H))
+    print("number of students who play cricket and football but not badminton=",len(H))
 condition4()    
