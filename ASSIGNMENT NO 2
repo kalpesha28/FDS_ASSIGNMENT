@@ -46,3 +46,16 @@ def absent(X, ab_students):
     print("Absent students are:", count)
 
 absent(X, ab_students)
+   
+  
+   
+def frequency():
+  max = 0
+  res = X[0]
+  for i in X:
+    freq = X.count(i)
+    if freq > max:
+        max = freq
+        res = i
+  print("highest frequency=",res)      
+frequency()        
