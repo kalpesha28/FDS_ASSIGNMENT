@@ -23,21 +23,21 @@ avg()
 
 def maximum():
     if len(X) > 0:
-        max_val = X[0]
+        max = X[0]
         for i in X:
-            if i > max_val:
-                max_val = i
-        print(max_val, "is the highest")
+            if i > max:
+                max = i
+        print(max, "is the highest")
     
 maximum()
 
 def minimum():
     if len(X) > 0:
-        min_val = X[0]
+        min = X[0]
         for i in X:
-            if i < min_val:
-                min_val = i
-        print(min_val, "is the lowest")
+            if i < min:
+                min = i
+        print(min, "is the lowest")
    
 minimum()
 
