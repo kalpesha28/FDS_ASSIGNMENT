@@ -12,35 +12,34 @@ n = int(input("Enter the number of students: "))
 createlist(X, ab_students, n)
 print("Marks:", X)
 
-
 def avg():
-        sum=0
+        sum = 0
         for i in X:
-          sum=sum+1
-          average = total / len(X) 
+            sum += i
+        average = sum / len(X)
         print("Average marks:", average)
+    
 avg()
 
-
-
 def maximum():
-        max = X[0]
+    if len(X) > 0:
+        max_val = X[0]
         for i in X:
-            if i > max:
-                max = i
-        print(max, "is highest")
+            if i > max_val:
+                max_val = i
+        print(max_val, "is the highest")
+    
 maximum()
 
-
-
 def minimum():
-        min = X[0]
+    if len(X) > 0:
+        min_val = X[0]
         for i in X:
-            if i < min:
-                min = i
-        print(min, "is lowest")
+            if i < min_val:
+                min_val = i
+        print(min_val, "is the lowest")
+   
 minimum()
-
 
 def absent(X, ab_students):
     count = len(ab_students)  
